@@ -6,6 +6,8 @@ void main(){
 
   var name = "rahul";
 
+  var add = 20;
+
   var emailId = "rahulrekm@gmail.com";
 
   final course = "Andrpoid Flutter";
