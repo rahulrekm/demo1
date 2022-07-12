@@ -7,6 +7,7 @@ void main(){
   int age = 36;
   String email = "rahulrekm@gmail.com";
   double cgpa = 67.5;
+  int address = "vyttila";
 
   print("My name is ${name}");
   print("I am i $age years old");
