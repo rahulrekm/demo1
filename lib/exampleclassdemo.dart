@@ -24,10 +24,21 @@ class Student_details{
      print("Student 1 course = ${Student_details.course}");
      print("\n");
 
+     Student_details student2 = Student_details();
+
+     print("Student 2 name = ${student2.name = "Aru"}");
+     print("Student 2 age = ${student2.age = 26}");
+     print("Student 2 email = ${student2.email = "arun@gmail.com"}");
+     print("Student 2 mobile = ${student2.mobile = 9895670000}");
+
+     print("Student 2 course = ${Student_details.course}");
+     print("\n");
 
 
 
 
 
 
-}
+
+
+   }
