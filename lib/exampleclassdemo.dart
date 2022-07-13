@@ -22,6 +22,8 @@ class Student_details{
      print("Student 1 mobile = ${student1.mobile = 9895670679}");
 
      print("Student 1 course = ${Student_details.course}");
+     print("\n");
+
 
 
 
