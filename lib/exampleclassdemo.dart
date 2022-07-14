@@ -13,9 +13,9 @@ class Student_details{
     }
 
   // user defined parametrized function
-     void hobby(String myhobby){  // where myhobby is parameter/argument/formal parameter
-      print("My hobby is $myhobby");
-     }
+     void hobby(String myhobby) =>  print("My hobby is $myhobby");                          // where myhobby is parameter/argument/formal parameter
+
+
 
 
 }
