@@ -14,12 +14,15 @@ void main() {
   list2.removeLast();
   print(list2);
 
+  print(list2.hashCode);
 
   var list3 = [1, 2, 3, 4, 5];
   print(list3);
   var list4 = List.of(list3);
   list4.add(6);
   print(list4);
+
+
 
   var list5 = List.unmodifiable(list4);
 
