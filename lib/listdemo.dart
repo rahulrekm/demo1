@@ -25,6 +25,7 @@ void main() {
 
 
   var list5 = List.unmodifiable(list4);
+  print(list5.hashCode);
 
   var list6 = List.filled(5, "a");
   print(list6);
