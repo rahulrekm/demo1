@@ -1,28 +1,31 @@
 import 'dart:io';
 import 'dart:math';
 
-void main(){
-
+void main() {
   String userInput;
   int stringLength;
-  List<String> list=[];
-  List<String> list2=[];
   print("Enter any word to check whether it is palindrome or not");
   userInput = stdin.readLineSync()!;
   stringLength = userInput.length;
-  print("you have entered $userInput containing ${stringLength} letters");
-  for(int i=0; i<stringLength; i++){
-    list.add(userInput[i]);
+  print("you have entered $userInput containing ${stringLength} letters \n");
+  int i = 0;
+  int j = stringLength - 1;
+  int flag=0;
+  for(int x=0;x<stringLength;x++){
+    if (userInput[i] == userInput[j]) {
+      i++;
+      j--;
+      flag = 1;
+    } else {
+      flag=0;
+    }
+    }
+  if(flag==1){
+    print("The given word is a palindrome");
+  } else {
+    print("The given word is not a palindrome");
   }
-  print(list);
-  final reverse = list.reversed;
-  list2 = reverse.toList();
-  print(list2);
-  String str = list2.join();
-  print(str);
-  if(userInput==str){
-    print("The word is a palindrome");
-  }else{
-    print("The word is not a palindrome");
   }
-  }
+
+
+
