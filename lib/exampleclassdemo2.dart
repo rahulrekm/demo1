@@ -20,8 +20,10 @@ class Mobiles{
     print("Network Type of this mobile $n_Type");
   }
 
-  void storage_capacity(var storage){
-    print("Storage capacity of this mobile is $storage");
+    String storage_capacity(String storage){
+    String stor = storage;
+    print("Storage capacity of this mobile is $stor");
+    return stor;
   }
 
 }
@@ -43,7 +45,6 @@ class Mobiles{
   
   mobile_1.network_type("4G");
   mobile_1.storage_capacity("1 TB");
-
 
   Mobiles mobile_2 = Mobiles();
 
@@ -102,6 +103,7 @@ class Mobiles{
     print("Enter the secondary camera");
     mobile_4.secondary_camera = double.parse(stdin.readLineSync()!);
     print("Enter the storage capacity");
+    String str = stdin.readLineSync()!;
 
     print("\n The entered details of mobile are:  \n");
     print("Mobile Type is $Mobiles.mobile_type_2");
@@ -116,7 +118,7 @@ class Mobiles{
     print("Secondary Camera is ${mobile_4.secondary_camera}MP");
 
     mobile_4.network_type("2G");
-    mobile_4.storage_capacity(stdin.readLineSync()!);
+    mobile_4.storage_capacity(str);
   }
 
   if(mtype==2){
@@ -141,6 +143,7 @@ class Mobiles{
     print("Enter the secondary camera");
     mobile_5.secondary_camera = double.parse(stdin.readLineSync()!);
     print("enter the storage capacity");
+    String str2 = stdin.readLineSync()!;
 
     print("\n The entered details of mobile are:  \n");
     print("Mobile Type is ${Mobiles.mobile_type}");
@@ -155,7 +158,7 @@ class Mobiles{
     print("Secondary Camera is ${mobile_5.secondary_camera}MP");
 
     mobile_5.network_type("4G");
-    mobile_5.storage_capacity(stdin.readLineSync()!);
+    mobile_5.storage_capacity(str2);
 
 
   }
