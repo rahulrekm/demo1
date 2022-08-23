@@ -15,7 +15,16 @@ class Bike{
   }
 }
 
-class myVechicle implements Car,Bike{
+abstract class Electric_vehicle{
+  
+  void e_car(String name, String model, int manfyear);
+  
+  void e_bike(String name, String model, int manfyear){
+    print(" My vehicle is $name model $model and manufactured in $manfyear");
+  }
+}
+
+class myVehicle extends Electric_vehicle implements Car,Bike {
   @override
   late int manfyear;
 
@@ -27,7 +36,6 @@ class myVechicle implements Car,Bike{
 
   @override
   void fun(String name, String model, int manfyear) {
-
     print(" My vehicle is $name model $model and manufactured in $manfyear");
   }
 
@@ -36,13 +44,20 @@ class myVechicle implements Car,Bike{
     print(" My vehicle is $name model $model and manufactured in $manfyear");
   }
 
+  @override
+  void e_car(String name, String model, int manfyear) {
+    print(" My vehicle is $name model $model and manufactured in $manfyear");
+  }
 }
 
 void main(){
 
-  myVechicle mV = myVechicle();
+  myVehicle mV = myVehicle();
   mV.fun("Ford", "Ecosport", 2012);
 
- mV.fun(mV.name = "Benz"  , mV.model = "E class" , mV.manfyear = 2021);
+  mV.fun(mV.name = "Benz"  , mV.model = "E class" , mV.manfyear = 2021);
   mV.fun1("Honda", "Activa", 2022);
+  
+  mV.e_car("Tesla", "EV", 2022);
+  mV.e_bike("OLA", "S1 Pro", 2022);
 }
