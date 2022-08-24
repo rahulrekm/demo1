@@ -18,4 +18,9 @@ void main(){
     print("$key:$value");
   });
 
+  List list1 = [1,2,3,4,5];
+  var map = Map<String,int>.fromIterable(list1, key: (element) => element.toString(),
+                                       value: (element) => element+element  );
+  map.forEach((key, value) { print("$key, $value");});
+
 }
